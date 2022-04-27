@@ -1,0 +1,22 @@
+#management config
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+server:
+  port: 8089
+
+
+#web crawler confgis
+crawl:
+  timeout: 1000
+  depth: 10
+  initial-urls:
+    - https://www.geeksforgeeks.org/
+    - https://www.imdb.com/
+    - https://www.bbc.com/
+    - https://www.livescore.in/
+    - https://wiki.com/
+    - https://www.listennotes.com/
